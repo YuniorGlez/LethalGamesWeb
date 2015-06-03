@@ -116,6 +116,7 @@ section {
 .section2 .news-reel{
   flex: 95;
   overflow: scroll;
+  margin-bottom: 3em
 }
 .section2 .new{
   min-width: 350px;
@@ -140,14 +141,20 @@ section {
 .section3 {
   background-color: gainsboro;
   height: 85vh;
-  padding: 3em
+  padding: 3em;
 }
 .section3 .title{
   font-size: 2em;
   margin-left: 2em
 }
+.section3 .showreel{
+  overflow: scroll;
+  flex-flow: wrap;
+  justify-content: center
+}
 .section3 .showreel img{
-  min-width: 150px
+  margin: 1.2em;
+
 }
 
 .section4 {
