@@ -108,7 +108,22 @@ section {
 .section2 {
   background-color: aquamarine
 }
-
+.section2 i{
+  flex: 5;
+  align-self: center;
+}
+.section2 .news-reel{
+  flex: 95;
+  overflow: scroll;
+}
+.section2 .new{
+  min-width: 350px;
+  justify-content: center;
+}
+.section2 .news-reel .separator{
+  border: 4px solid black;
+  height: 60%
+}
 .bg2 {
   height: 75vh;
   background-color: fuchsia;
