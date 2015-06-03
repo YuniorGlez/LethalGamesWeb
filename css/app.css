@@ -1,4 +1,98 @@
 /* Application Styles */
+
 section {
   height: 55vh;
+}
+.column{
+  display: flex;
+  flex-flow: column;
+}
+.row{
+  display: flex;
+  flex-flow: row;
+}
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  flex-flow: row;
+}
+
+.navbar .logo {
+  padding: 5px;
+  padding-left: 25px;
+  flex: 3;
+  align-self: center;
+}
+
+.navbar .anchors {
+  display: flex;
+  flex-flow: row;
+  flex: 3;
+  justify-content: space-around;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  border-right: 1px solid black;
+  padding-right: 25px;
+  align-self: center;
+  font-size: 19px
+}
+
+.navbar .anchors ul {
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-between
+}
+
+.bg1 {
+  -webkit-height: 45vh;
+  -moz-height: 45vh;
+  -ms-height: 45vh;
+  -o-height: 45vh;
+  height: 45vh;
+  background-image: url(/img/bg1.jpg);
+  background-position: top center;
+  background-size: contain 220%;
+  background-attachment: fixed
+}
+
+.section1 {
+  background-color: antiquewhite;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end
+}
+.section1 .content{
+  background: red;
+  flex: 4;
+
+}
+.space7{
+  flex: 7;
+}
+
+.section2 {
+  background-color: aquamarine
+}
+
+.bg2 {
+  height: 75vh;
+  background-color: fuchsia;
+}
+
+.section3 {
+  background-color: gainsboro;
+}
+
+.section4 {
+  background-color: firebrick;
+}
+
+.section5 {
+  background-color: black;
+  height: 35vh
 }
