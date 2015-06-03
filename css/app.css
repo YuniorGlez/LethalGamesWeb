@@ -3,11 +3,13 @@
 section {
   height: 55vh;
 }
-.column{
+
+.column {
   display: flex;
   flex-flow: column;
 }
-.row{
+
+.row {
   display: flex;
   flex-flow: row;
 }
@@ -66,13 +68,41 @@ section {
   flex-flow: row;
   justify-content: flex-end
 }
-.section1 .content{
-  background: red;
-  flex: 4;
 
+.section1 .content {
+  flex: 6;
 }
-.space7{
+
+.space7 {
   flex: 7;
+}
+
+.section1 .left {
+  flex: 4;
+}
+
+.section1 .left .title {
+  flex: 3;
+  align-self: inherit;
+  text-align: center;
+  justify-content: flex-end;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+.section1 .left .description {
+  flex: 7;
+  justify-content: flex-start;
+  text-align: justify;
+  padding: 5%;
+  padding-top: 0%;
+  box-sizing: border-box;
+}
+
+.section1 .cover {
+  padding: 15px;
+  margin-right: 10%;
+  flex: 4;
 }
 
 .section2 {
