@@ -104,6 +104,10 @@ section {
 .section2 {
   background-color: aquamarine
 }
+.section2 .title{
+  font-size: 2em;
+  margin-left: 4em
+}
 .section2 i{
   flex: 5;
   align-self: center;
