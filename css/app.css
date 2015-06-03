@@ -111,6 +111,7 @@ section {
 .section2 i{
   flex: 5;
   align-self: center;
+  font-size: 2.5em;
 }
 .section2 .news-reel{
   flex: 95;
@@ -121,8 +122,12 @@ section {
   justify-content: center;
 }
 .section2 .news-reel .separator{
-  border: 4px solid black;
-  height: 60%
+  border: 1px solid grey;
+  height: 200px;
+  flex-flow: column;
+  align-self: center;
+  margin-left: 1em;
+  margin-right: 2em;
 }
 .bg2 {
   height: 75vh;
