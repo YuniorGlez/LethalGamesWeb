@@ -139,6 +139,15 @@ section {
 
 .section3 {
   background-color: gainsboro;
+  height: 85vh;
+  padding: 3em
+}
+.section3 .title{
+  font-size: 2em;
+  margin-left: 2em
+}
+.section3 .showreel img{
+  min-width: 150px
 }
 
 .section4 {
