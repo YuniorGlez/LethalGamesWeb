@@ -51,14 +51,10 @@ section {
 }
 
 .bg1 {
-  -webkit-height: 45vh;
-  -moz-height: 45vh;
-  -ms-height: 45vh;
-  -o-height: 45vh;
   height: 45vh;
   background-image: url(/img/bg1.jpg);
   background-position: top center;
-  background-size: contain 220%;
+  background-size: 100% auto;
   background-attachment: fixed
 }
 
@@ -131,7 +127,10 @@ section {
 }
 .bg2 {
   height: 75vh;
-  background-color: fuchsia;
+  background-image: url(/img/bg2.jpg);
+  background-position: top center;
+  background-size: 100% 120%;
+  background-attachment: fixed
 }
 
 .section3 {
