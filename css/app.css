@@ -104,25 +104,30 @@ section {
 .section2 {
   background-color: aquamarine
 }
-.section2 .title{
+
+.section2 .title {
   font-size: 2em;
   margin-left: 4em
 }
-.section2 i{
+
+.section2 i {
   flex: 5;
   align-self: center;
   font-size: 2.5em;
 }
-.section2 .news-reel{
+
+.section2 .news-reel {
   flex: 95;
   overflow: scroll;
   margin-bottom: 3em
 }
-.section2 .new{
+
+.section2 .new {
   min-width: 350px;
   justify-content: center;
 }
-.section2 .news-reel .separator{
+
+.section2 .news-reel .separator {
   border: 1px solid grey;
   height: 200px;
   flex-flow: column;
@@ -130,6 +135,7 @@ section {
   margin-left: 1em;
   margin-right: 2em;
 }
+
 .bg2 {
   height: 75vh;
   background-image: url(/img/bg2.jpg);
@@ -143,24 +149,50 @@ section {
   height: 85vh;
   padding: 3em;
 }
-.section3 .title{
+
+.section3 .title {
   font-size: 2em;
   margin-left: 2em
 }
-.section3 .showreel{
+
+.section3 .showreel {
   overflow: scroll;
   flex-flow: wrap;
   justify-content: center
 }
-.section3 .showreel img{
+
+.section3 .showreel img {
   margin: 1.2em;
 }
 
 .section4 {
   background-color: firebrick;
+  height: auto
 }
 
+.section4 .workers-reel {
+  margin: auto;
+  max-width: 90%;
+  flex-flow: wrap;
+  margin-bottom: 2em
+}
 
+.section4 .worker {
+  margin: 3em;
+  max-width: 150px;
+}
+
+.worker img {
+  border-radius: 50%;
+}
+
+.worker .name{
+  font-size: 1.5em;
+  text-align: center
+}
+.worker .description{
+  text-align: justify
+}
 .section5 {
   background-color: black;
   height: 35vh
