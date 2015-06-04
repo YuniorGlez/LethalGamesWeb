@@ -1,20 +1,23 @@
 var wScroll;
-var elements;
+var elements = document.getElementsByClassName("animate");
 var activados = 0;
+var actual;
 $(window).scroll(function () {
 
   wScroll = $(this).scrollTop();
-  //  console.log('wScroll =' + wScroll);
-  //  console.log('.animate = ' + $('.animate').offset().top);
-  elements = document.getElementsByClassName("animate");
   var i;
+  console.log('wScroll = ' + wScroll);
   for (i = 0; i < elements.length; i++) {
-    console.log($(elements[i]) + ' ' +  $(elements[i]).offset().top);
-    if (wScroll > $(elements[i]).offset().top - 100) {
-      $(elements[i]).removeClass('none');
-      $(elements[i]).addClass('animated');
-      $(elements[i]).removeClass('animate');
-      activados++;
+
+    console.log(' $(elements[i]).offset().top = ' +  $(elements[i]).offset().top);
+    //    console.log($(elements[i]) + ' ' +  $(elements[i]).);
+    console.log('wScroll > $(elements[i]).offset().top = ' + (wScroll > $(elements[i]).offset().top);
+    actual = $(elements[i]);
+    if (wScroll > actual.offset().top) {
+      actual.removeClass('none');
+      actual.addClass('animated');
+      actual.removeClass('animate');
+      break;
     }
   }
 
