@@ -2,6 +2,7 @@
 
 section {
   height: 55vh;
+  z-index: 2;
 }
 
 .column {
@@ -200,6 +201,8 @@ section {
   background-color: black;
   height: auto;
   color: white;
+  position: fixed;
+  bottom: 0px
 }
 .section5 form{
   padding: 1em;
