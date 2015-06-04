@@ -5,6 +5,7 @@ section {
   z-index: 2;
 }
 
+
 .column {
   display: flex;
   flex-flow: column;
@@ -168,7 +169,8 @@ section {
 
 .section4 {
   background-color: firebrick;
-  height: auto
+  height: auto;
+  margin-bottom: 400px
 }
 .section4 .title{
   font-size: 1.5em;
@@ -199,10 +201,12 @@ section {
 }
 .section5 {
   background-color: black;
-  height: auto;
+  height: 400px;
   color: white;
   position: fixed;
-  bottom: 0px
+  bottom: 0px;
+  width: 100%;
+  z-index: -3;
 }
 .section5 form{
   padding: 1em;
