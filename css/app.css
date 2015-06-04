@@ -169,7 +169,10 @@ section {
   background-color: firebrick;
   height: auto
 }
-
+.section4 .title{
+  font-size: 1.5em;
+  margin-left: 4em;
+}
 .section4 .workers-reel {
   margin: auto;
   max-width: 90%;
@@ -195,5 +198,18 @@ section {
 }
 .section5 {
   background-color: black;
-  height: 35vh
+  height: auto;
+  color: white;
+}
+.section5 form{
+  padding: 1em;
+  flex: 7;
+}
+.section5 .newsletter-input{
+  flex: 7;
+  color: dimgrey
+}
+
+.none {
+  display: none;
 }

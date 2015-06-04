@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <link rel="stylesheet" href="lib/normalize/normalize.css">
+  <link rel="stylesheet" href="/css/animate.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -40,7 +41,7 @@
 
   <section class="section1" id="game">
     <div class="space7"></div>
-    <div class="content row">
+    <div class="content row none animate fadeInRight">
       <div class="left column">
         <div class="title column">Game Name</div>
         <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam facilis, a reprehenderit pariatur, sunt earum maxime dolorem sint natus incidunt accusamus ea aut voluptate! Sed.</div>
@@ -51,8 +52,8 @@
 
 
   <section class="section2 column" id="game-news">
-    <p class="title row"> In news and networks</p>
-    <div class="row">
+    <p class="title row none animate slideInLeft"> In news and networks</p>
+    <div class="row none animate fadeIn">
       <i class="arrow-left column material-icons">keyboard_arrow_left</i>
       <div class="news-reel row">
         <div class="new column">
@@ -112,46 +113,46 @@
   <div class="bg2"></div>
 
   <section class="section3 column" id="gallery">
-    <p class="title">Gallery</p>
+    <p class="title none animate slideInLeft">Gallery</p>
     <div class="showreel row">
-      <img src="http://www.placehold.it/250x150" alt="">
-      <img src="http://www.placehold.it/250x150" alt="">
-      <img src="http://www.placehold.it/250x150" alt="">
-      <img src="http://www.placehold.it/250x150" alt="">
-      <img src="http://www.placehold.it/250x150" alt="">
-      <img src="http://www.placehold.it/250x150" alt="">
-      <img src="http://www.placehold.it/250x150" alt="">
-      <img src="http://www.placehold.it/250x150" alt="">
-      <img src="http://www.placehold.it/250x150" alt="">
-      <img src="http://www.placehold.it/250x150" alt="">
+      <img class="none animate fadeInUp" src="http://www.placehold.it/250x150" alt="">
+      <img class="none animate fadeInUp" src="http://www.placehold.it/250x150" alt="">
+      <img class="none animate fadeInUp" src="http://www.placehold.it/250x150" alt="">
+      <img class="none animate fadeInUp" src="http://www.placehold.it/250x150" alt="">
+      <img class="none animate fadeInUp" src="http://www.placehold.it/250x150" alt="">
+      <img class="none animate fadeInUp" src="http://www.placehold.it/250x150" alt="">
+      <img class="none animate fadeInUp" src="http://www.placehold.it/250x150" alt="">
+      <img class="none animate fadeInUp" src="http://www.placehold.it/250x150" alt="">
+      <img class="none animate fadeInUp" src="http://www.placehold.it/250x150" alt="">
+      <img class="none animate fadeInUp" src="http://www.placehold.it/250x150" alt="">
     </div>
 
   </section>
 
-  <section class="section4 column">
-    <p class="title"></p>
+  <section class="section4 column" id="team">
+    <p class="title">Our Team</p>
     <div class="row workers-reel">
-      <div class="worker column">
+      <div class="worker column none animate slideInLeft">
         <img src="http://www.placehold.it/150x150" alt="">
         <h1 class="name">Giacomo Vaccari</h1>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit minima nemo quas, ipsa beatae commodi!</p>
       </div>
-      <div class="worker column">
+      <div class="worker column none animate slideInLeft">
         <img src="http://www.placehold.it/150x150" alt="">
         <h1 class="name">Giacomo Vaccari</h1>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur eaque at quo, eius deserunt.</p>
       </div>
-      <div class="worker column">
+      <div class="worker column none animate slideInUp">
         <img src="http://www.placehold.it/150x150" alt="">
         <h1 class="name">Giacomo Vaccari</h1>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam obcaecati deserunt totam voluptate similique et!</p>
       </div>
-      <div class="worker column">
+      <div class="worker column none animate slideInRight">
         <img src="http://www.placehold.it/150x150" alt="">
         <h1 class="name">Giacomo Vaccari</h1>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptas tempore, consequatur a voluptatum rerum.</p>
       </div>
-      <div class="worker column">
+      <div class="worker column none animate slideInRight">
         <img src="http://www.placehold.it/150x150" alt="">
         <h1 class="name">Giacomo Vaccari</h1>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ex consequatur dignissimos modi, velit nihil?</p>
@@ -159,7 +160,24 @@
     </div>
   </section>
 
-  <footer class="section5"></footer>
+  <footer class="section5 row" id="contact">
+   <div class="space7"></div>
+    <form action="POST">
+      Email us:
+      <br>
+      <p>Your name:</p>
+      <input type="text" name="name" id="">
+      <p>Your email:</p>
+      <input type="text" name="name" id="">
+      <p>Your message:</p>
+      <textarea name="" id="" cols="30" rows="5"></textarea>
+    </form>
+    <div class="newsletter-input">
+      <p>Sing up for newsletter:</p>
+      <input type="email" placeholder="email">
+      <input type="submit">
+    </div>
+  </footer>
 
   <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
   <script>
