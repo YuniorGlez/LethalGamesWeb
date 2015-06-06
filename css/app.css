@@ -217,7 +217,9 @@ section {
   flex: 7;
   color: dimgrey
 }
+*{
+}
 
 .none {
-  display: none;
+  opacity: 0;
 }
