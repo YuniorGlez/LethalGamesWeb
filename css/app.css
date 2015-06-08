@@ -55,7 +55,7 @@ section {
 
 .bg1 {
   height: 45vh;
-  background-image: url(/img/bg1.jpg);
+  background-image: url(../img/bg1.jpg);
   background-position: top center;
   background-size: 100% auto;
   background-attachment: fixed
@@ -141,7 +141,7 @@ section {
 
 .bg2 {
   height: 75vh;
-  background-image: url(/img/bg2.jpg);
+  background-image: url(../img/bg2.jpg);
   background-position: top center;
   background-size: 100% 120%;
   background-attachment: fixed
