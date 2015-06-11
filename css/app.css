@@ -2,11 +2,8 @@
 
 section {
   height: 55vh;
-  z-index: 2;
   position: relative;
-
 }
-
 
 .column {
   display: flex;
@@ -18,22 +15,58 @@ section {
   flex-flow: row;
 }
 
-.trailer{
-  position: absolute;
-  min-width: 100%;
-  min-height: 100vh;
-  z-index: 35;
+.trailer {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
   background-color: white;
+  padding: 0px;
+  animation: 2s all ease-in;
+  transition: 2s all ease-in;
 }
-.transparente{
+
+.trailer .close-btn {
+  position: fixed;
+  top: 10vh;
+  left: 85%;
+  z-index: 2;
+}
+
+.closing {
+  top: 600px;
+  left: 45px;
+  width: 450px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.closed {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 450px;
+  height: 450px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.space-trailer {
+  align-self: center;
+}
+
+.transparente {
   animation-delay: 5s;
   background-color: rgba(255, 255, 255, 0.01);
 }
 
-.trailer video{
+.trailer video {
   width: 95%;
   height: 95%;
 }
+
 .navbar {
   height: 50px;
   display: flex;
@@ -63,18 +96,18 @@ section {
   font-size: 19px;
   animation: 1s all ease-in
 }
-.navbar a:hover{
+
+.navbar a:hover {
   -webkit-transform: rotateX(180);
   -ms-transform: rotateX(180);
   -o-transform: rotateX(180);
   transform: rotateX(180);
-
 }
 
 .navbar .anchors ul {
   display: flex;
   justify-content: flex-end;
-  align-content: space-between
+  align-content: space-between;
 }
 
 .bg1 {
@@ -82,19 +115,20 @@ section {
   background-image: url(../img/bg1.jpg);
   background-position: top center;
   background-size: 100% auto;
-  background-attachment: fixed
+  background-attachment: fixed;
 }
 
 .section1 {
   background-color: antiquewhite;
   display: flex;
   flex-flow: row;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
+
 .section1 *{
   animation-duration: 2s !important;
-
 }
+
 .section1 .content {
   flex: 6;
 }
@@ -135,13 +169,13 @@ section {
   background-color: aquamarine
 }
 
-.section2 *{
+.section2 * {
   animation-duration: 2s !important;
-
 }
+
 .section2 .title {
   font-size: 2em;
-  margin-left: 4em
+  margin-left: 4em;
 }
 
 .section2 i {
@@ -153,7 +187,7 @@ section {
 .section2 .news-reel {
   flex: 95;
   overflow: scroll;
-  margin-bottom: 3em
+  margin-bottom: 3em;
 }
 
 .section2 .new {
@@ -175,7 +209,7 @@ section {
   background-image: url(../img/bg2.jpg);
   background-position: top center;
   background-size: 100% 120%;
-  background-attachment: fixed
+  background-attachment: fixed;
 }
 
 .section3 {
@@ -192,7 +226,7 @@ section {
 .section3 .showreel {
   overflow: scroll;
   flex-flow: wrap;
-  justify-content: center
+  justify-content: center;
 }
 
 .section3 .showreel img {
@@ -202,22 +236,23 @@ section {
 .section4 {
   background-color: firebrick;
   height: auto;
-  margin-bottom: 400px
+  margin-bottom: 400px;
 }
 
-.section4 *{
+.section4 * {
   animation-duration: 2s !important;
-
 }
-.section4 .title{
+
+.section4 .title {
   font-size: 1.5em;
   margin-left: 4em;
 }
+
 .section4 .workers-reel {
   margin: auto;
   max-width: 90%;
   flex-flow: wrap;
-  margin-bottom: 2em
+  margin-bottom: 2em;
 }
 
 .section4 .worker {
@@ -227,37 +262,40 @@ section {
   -o-animation-timing-function: cubic-bezier(.38, -0.47, .73, 1.45);
   animation-timing-function: cubic-bezier(.38, -0.47, .73, 1.45);
 }
-.section4 .worker:nth-child(3){
-  -webkit-animation-delay:  0s !important;
-  -o-animation-delay:  0s !important;
-  animation-delay:  0s !important;
+
+.section4 .worker:nth-child(3) {
+  -webkit-animation-delay: 0s !important;
+  -o-animation-delay: 0s !important;
+  animation-delay: 0s !important;
 }
+
 .section4 .worker:nth-child(2),
-.section4 .worker:nth-child(4)
-{
-  -webkit-animation-delay:  1s !important;
-  -o-animation-delay:  1s !important;
-  animation-delay:  1s !important;
+.section4 .worker:nth-child(4) {
+  -webkit-animation-delay: 1s !important;
+  -o-animation-delay: 1s !important;
+  animation-delay: 1s !important;
 }
+
 .section4 .worker:nth-child(1),
-.section4 .worker:nth-child(5)
-{
-  -webkit-animation-delay:  2s !important;
-  -o-animation-delay:  2s !important;
-  animation-delay:  2s !important;
+.section4 .worker:nth-child(5) {
+  -webkit-animation-delay: 2s !important;
+  -o-animation-delay: 2s !important;
+  animation-delay: 2s !important;
 }
 
 .worker img {
   border-radius: 50%;
 }
 
-.worker .name{
+.worker .name {
   font-size: 1.5em;
   text-align: center
 }
-.worker .description{
+
+.worker .description {
   text-align: justify
 }
+
 .section5 {
   background-color: black;
   height: 400px;
@@ -267,13 +305,15 @@ section {
   width: 100%;
   z-index: -3;
 }
-.section5 form{
+
+.section5 form {
   padding: 1em;
   flex: 7;
 }
-.section5 .newsletter-input{
+
+.section5 .newsletter-input {
   flex: 7;
-  color: dimgrey
+  color: dimgrey;
 }
 
 .none {
