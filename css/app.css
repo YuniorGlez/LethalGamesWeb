@@ -18,6 +18,22 @@ section {
   flex-flow: row;
 }
 
+.trailer{
+  position: absolute;
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: 35;
+  background-color: white;
+}
+.transparente{
+  animation-delay: 5s;
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+.trailer video{
+  width: 95%;
+  height: 95%;
+}
 .navbar {
   height: 50px;
   display: flex;

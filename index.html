@@ -17,6 +17,12 @@
 
 <body>
 
+
+  <div class=" animated fadeIn trailer transparente" id="trailer">
+   <i class="close"></i>
+    <video src="https://www.youtube.com/watch?v=5QNhyTtzeJ8" type="video/mp4" controls poster="/video/wind-8a1cd93f.png" id="styled_video" muted preload="metadata">
+</div>
+
   <nav class="navbar">
     <div class="logo">
       <img src="http://www.placehold.it/250x50" alt="">
@@ -157,7 +163,7 @@
     </div>
   </section>
 
-  <footer class="section5 row" id="contact">
+  <footer class="section5 row none" id="contact">
     <div class="space7"></div>
     <form action="POST">
       Email us:
@@ -204,6 +210,7 @@
       $('.news-reel').animate({
 			scrollLeft: ($(".news-reel").scrollLeft() + $(".new").width())}, 300);
     });
+
   </script>
   <script src="js/app.js"></script>
 </body>
