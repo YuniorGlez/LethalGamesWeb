@@ -10,7 +10,7 @@ $(window).scroll(function () {
     if (wScroll > $(elements[i]).offset().top - $(window).height() * 0.8) {
       console.log("Active " + $(elements[i]).attr("id"));
       $(elements[i]).removeClass('none');
-      elements[i].className = elements[i].className.replace('-','');
+      elements[i].className = elements[i].className.replace(' -',' ');
     }
   }
 

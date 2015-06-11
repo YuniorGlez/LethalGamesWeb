@@ -191,7 +191,7 @@ section {
 }
 
 .section4 *{
-  animation-duration: 3s !important;
+  animation-duration: 2s !important;
 
 }
 .section4 .title{
@@ -208,6 +208,28 @@ section {
 .section4 .worker {
   margin: 3em;
   max-width: 150px;
+  -webkit-animation-timing-function: cubic-bezier(.38, -0.47, .73, 1.45);
+  -o-animation-timing-function: cubic-bezier(.38, -0.47, .73, 1.45);
+  animation-timing-function: cubic-bezier(.38, -0.47, .73, 1.45);
+}
+.section4 .worker:nth-child(3){
+  -webkit-animation-delay:  0s !important;
+  -o-animation-delay:  0s !important;
+  animation-delay:  0s !important;
+}
+.section4 .worker:nth-child(2),
+.section4 .worker:nth-child(4)
+{
+  -webkit-animation-delay:  1s !important;
+  -o-animation-delay:  1s !important;
+  animation-delay:  1s !important;
+}
+.section4 .worker:nth-child(1),
+.section4 .worker:nth-child(5)
+{
+  -webkit-animation-delay:  2s !important;
+  -o-animation-delay:  2s !important;
+  animation-delay:  2s !important;
 }
 
 .worker img {
