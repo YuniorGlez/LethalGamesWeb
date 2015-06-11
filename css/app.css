@@ -4,6 +4,7 @@ section {
   height: 55vh;
   z-index: 2;
   position: relative;
+
 }
 
 
@@ -44,7 +45,15 @@ section {
   border-right: 1px solid black;
   padding-right: 25px;
   align-self: center;
-  font-size: 19px
+  font-size: 19px;
+  animation: 1s all ease-in
+}
+.navbar a:hover{
+  -webkit-transform: rotateX(180);
+  -ms-transform: rotateX(180);
+  -o-transform: rotateX(180);
+  transform: rotateX(180);
+
 }
 
 .navbar .anchors ul {
@@ -67,7 +76,10 @@ section {
   flex-flow: row;
   justify-content: flex-end
 }
+.section1 *{
+  animation-duration: 2s !important;
 
+}
 .section1 .content {
   flex: 6;
 }
@@ -108,6 +120,10 @@ section {
   background-color: aquamarine
 }
 
+.section2 *{
+  animation-duration: 2s !important;
+
+}
 .section2 .title {
   font-size: 2em;
   margin-left: 4em
@@ -173,6 +189,11 @@ section {
   height: auto;
   margin-bottom: 400px
 }
+
+.section4 *{
+  animation-duration: 3s !important;
+
+}
 .section4 .title{
   font-size: 1.5em;
   margin-left: 4em;
@@ -216,8 +237,6 @@ section {
 .section5 .newsletter-input{
   flex: 7;
   color: dimgrey
-}
-*{
 }
 
 .none {
