@@ -195,6 +195,15 @@
         }
       });
     });
+
+    $(".arrow-left").click(function(){
+      $('.news-reel').animate({
+			scrollLeft: ($(".news-reel").scrollLeft() - $(".new").width() )}, 300);
+    });
+    $(".arrow-right").click(function(){
+      $('.news-reel').animate({
+			scrollLeft: ($(".news-reel").scrollLeft() + $(".new").width())}, 300);
+    });
   </script>
   <script src="js/app.js"></script>
 </body>

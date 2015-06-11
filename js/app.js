@@ -8,7 +8,7 @@ $(window).scroll(function () {
   for (i = 0; i < elements.length; i++) {
 
     if (wScroll > $(elements[i]).offset().top - $(window).height() * 0.8) {
-      console.log("Active " + $(elements[i]).attr("id"));
+//      console.log("Active " + $(elements[i]).attr("id"));
       $(elements[i]).removeClass('none');
       elements[i].className = elements[i].className.replace(' -',' ');
     }

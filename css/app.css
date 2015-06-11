@@ -19,13 +19,12 @@ section {
 }
 
 .navbar {
-  height: 10vh;
+  height: 50px;
   display: flex;
   flex-flow: row;
 }
 
 .navbar .logo {
-  padding: 5px;
   padding-left: 25px;
   flex: 3;
   align-self: center;
