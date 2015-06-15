@@ -47,16 +47,22 @@ section {
   position: relative;
   left: 0px;
   top: 0px;
-  width: 450px;
-  height: 450px;
+  width: 100%;
+  height: 100%;
   padding: 15px;
   background: rgba(255, 255, 255, 0);
 }
 
 .space-trailer {
-  align-self: center;
+  align-self: flex-end;
+  padding: 0px;
+  height: 100%;
 }
-
+.space-trailer video{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
 .transparente {
   animation-delay: 5s;
   background-color: rgba(255, 255, 255, 0.01);
@@ -71,6 +77,8 @@ section {
   height: 50px;
   display: flex;
   flex-flow: row;
+  opacity: 0.3;
+  background-color: aqua;
 }
 
 .navbar .logo {
@@ -96,11 +104,10 @@ section {
   height: auto;
   width: auto;
   animation: 2s all ease-in;
-  -webkit-transition:  all 2s ease;
-  -o-transition:  all 2s ease;
-  transition:  all 2s ease;
+  -webkit-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
   display: inline-block;
-
 }
 
 .navbar a:hover {
@@ -116,7 +123,7 @@ section {
   align-content: space-between;
 }
 
-.navbar .anchors .bg{
+.navbar .anchors .bg {
   outline: black solid 2px;
   height: 100%;
   width: 100%;
@@ -131,6 +138,7 @@ section {
   background-position: top center;
   background-size: 100% auto;
   background-attachment: fixed;
+  margin-top: -4em;
 }
 
 .section1 {
@@ -140,16 +148,24 @@ section {
   justify-content: flex-end;
 }
 
-.section1 *{
+.section1 * {
   animation-duration: 2s !important;
 }
 
 .section1 .content {
-  flex: 6;
+  flex: 7;
 }
 
 .space7 {
   flex: 7;
+}
+
+.space2 {
+  -webkit-flex: 2;
+  -moz-flex: 2;
+  -ms-flex: 2;
+  -o-flex: 2;
+  flex: 2;
 }
 
 .section1 .left {
@@ -208,6 +224,28 @@ section {
 .section2 .new {
   min-width: 350px;
   justify-content: center;
+  background-color: rgba(250, 235, 215, 0.3);
+  border-radius: 25px;
+  padding: 15px;
+  transition: 1s all ;
+
+}
+.new , .back{
+  backface-visibility: hidden;
+}
+.back{
+  transform: rotateY(180deg);
+  background-color: aqua;
+  height: 100%;
+  width: 100%;
+}
+.section2 .new:hover{
+  -webkit-cursor:  url(../img/pointer.png), auto;
+  -moz-cursor:  url(../img/pointer.png), auto;
+  -ms-cursor:  url(../img/pointer.png), auto;
+  -o-cursor:  url(../img/pointer.png), auto;
+  cursor:  url(../img/pointer.png), auto;
+  transform: rotateY(540deg);
 }
 
 .section2 .news-reel .separator {
@@ -289,7 +327,8 @@ section {
   -o-animation-delay: 1s !important;
   animation-delay: 1s !important;
 }
-.section4 .worker:nth-child(2){
+
+.section4 .worker:nth-child(2) {
   -webkit-animation-delay: 1.4s !important;
   -o-animation-delay: 1.4s !important;
   animation-delay: 1.4s !important;
