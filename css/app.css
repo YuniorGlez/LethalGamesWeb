@@ -308,9 +308,43 @@ section {
   flex-flow: wrap;
   justify-content: center;
 }
-
-.section3 .showreel img {
+#gallery .imgGallery{
+  position: relative;
   margin: 1.2em;
+}
+.imgGallery .front{
+  opacity: 1;
+  animation: 1s all ease;
+  transition: 1s all ease;
+}
+
+.imgGallery .back {
+  position: absolute;
+  top: 0px;
+  width: 250px;
+  height: 150px;
+  background-color: grey;
+  opacity: 0;
+  animation: 1s all ease;
+  transition: 1s all ease;
+  padding: 20px;
+  margin: -10px;
+  display: flex;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column;
+
+}
+.imgGallery .front:hover{
+  opacity: 0.3;
+}
+
+.imgGallery .back:hover{
+  opacity: 0.8;
+  padding: 0px;
+  margin: 0px;
 }
 
 .section4 {
@@ -350,22 +384,22 @@ section {
 }
 
 .section4 .worker:nth-child(4) {
+  -webkit-animation-delay: 0.4s !important;
+  -o-animation-delay: 0.4s !important;
+  animation-delay: 0.4s !important;
+}
+
+.section4 .worker:nth-child(2) {
   -webkit-animation-delay: 1s !important;
   -o-animation-delay: 1s !important;
   animation-delay: 1s !important;
 }
 
-.section4 .worker:nth-child(2) {
-  -webkit-animation-delay: 1.4s !important;
-  -o-animation-delay: 1.4s !important;
-  animation-delay: 1.4s !important;
-}
-
 .section4 .worker:nth-child(1),
 .section4 .worker:nth-child(5) {
-  -webkit-animation-delay: 2s !important;
-  -o-animation-delay: 2s !important;
-  animation-delay: 2s !important;
+  -webkit-animation-delay: 1.5s !important;
+  -o-animation-delay: 1.5s !important;
+  animation-delay: 1.5s !important;
 }
 
 .worker img {
