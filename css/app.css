@@ -1,4 +1,4 @@
-/* Application Styles */
+/*autoprefix*/
 
 section {
   height: 55vh;
@@ -199,7 +199,8 @@ section {
 }
 
 .section2 {
-  background-color: aquamarine
+  background-color: aquamarine;
+  min-height: 600px;
 }
 
 .section2 * {
